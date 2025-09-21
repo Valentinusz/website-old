@@ -1,0 +1,169 @@
+:root {
+  --gold: #d4af37
+}
+
+.page {
+  * {
+    font-family: 'Cinzel', serif;
+    color: white;
+  }
+
+  display: flex;
+  flex-direction: column;
+  overflow: clip;
+  gap: 0.5rem;
+  width: 100vw;
+  height: 100vh;
+  background: radial-gradient(circle at 45% 55%, transparent 0%, rgba(0, 0, 0, 0.2) 100%),
+  radial-gradient(circle at 60% 40%, transparent 0%, rgba(0, 0, 0, 0.25) 100%),
+  radial-gradient(circle at -60% -40%, transparent 0%, rgba(0, 0, 0, 0.3) 20%),
+  linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+
+  background-size: 200% 200%;
+  animation: subtleGradientMove 45s ease-in-out infinite alternate;
+  //overflow: hidden;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 12rem;
+}
+
+@keyframes subtleGradientMove {
+  0% {
+    background-position: 0% 0%, 0% 0%;
+  }
+  50% {
+    background-position: 10% 10%, 5% 5%;
+  }
+  100% {
+    background-position: 0% 0%, 0% 0%;
+  }
+}
+
+.backgroundOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.titleSeparator {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  width: 75%;
+}
+
+.petalsContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.content {
+  z-index: 3;
+  text-align: center;
+  color: var(--color-text);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mainTitle {
+  font-size: 6rem;
+  font-weight: 600;
+
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  letter-spacing: 0.05em;
+  margin-bottom: 0;
+}
+
+.subtitle {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: var(--gold);
+  margin: 0;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+  letter-spacing: 0.1em;
+  opacity: 0.9;
+}
+
+.actionList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.petal {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  background: gold;
+  border-radius: 40% 60% 60% 40% / 60% 40% 60% 40%; /* petal shape */
+  animation: floatPetal 6s ease-in-out infinite;
+  opacity: 0.8;
+}
+
+.left-group {
+  left: 0;
+}
+
+.right-group {
+  right: 0;
+}
+
+.petal {
+  overflow: hidden;
+  position: absolute;
+  width: 80px;
+  height: 80px;
+
+  border-radius: 40% 60% 60% 40% / 60% 40% 60% 40%;
+  opacity: 0.8;
+  //animation: floatVertical 6s cubic-bezier(0.64, 0.57, 0.67, 1.53) forwards;
+  animation: floatVertical 2s cubic-bezier(0.64, 0.57, 0.67, 1.53);
+  animation-iteration-count: infinite;
+  perspective: 50px;
+  offset-rotate: auto 60deg;
+
+}
+
+.leftPetal {
+  background: red;
+  offset-path: path("M0,0 C-100,-200 -300,-100 -500,-250");
+}
+
+.rightPetal {
+  background: var(--gold);
+  offset-path: path("M0,0 C100,-300 300,-100 500,-250");
+}
+
+/* vertical floating common to both */
+@keyframes floatVertical {
+  0% {
+    opacity: 1;
+    transition: visibility 0s 2s, opacity 2s linear;
+
+  }
+  100% {
+    offset-distance: 100%;
+    opacity: 0;
+    transition: visibility 0s 2s, opacity 2s linear;
+  }
+}
+
+.item {
+  border-color: var(--gold);
+  border-width: 1px;
+  background-color: transparent;
+  font-size: 1.4rem;
+}
+

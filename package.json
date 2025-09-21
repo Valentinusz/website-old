@@ -14,26 +14,28 @@
     "write-heading-ids": "docusaurus write-heading-ids"
   },
   "dependencies": {
-    "@docusaurus/core": "^3.7.0",
-    "@docusaurus/preset-classic": "^3.7.0",
-    "@docusaurus/theme-mermaid": "^3.7.0",
-    "@mdx-js/react": "^3.0.0",
-    "@reactflow/background": "^11.3.4",
-    "@reactflow/controls": "^11.2.4",
-    "clsx": "^2.0.0",
-    "docusaurus-plugin-sass": "^0.2.5",
-    "prism-react-renderer": "^2.1.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "reactflow": "^11.9.4",
-    "rehype-katex": "^7.0.0",
+    "@docusaurus/core": "^3.8.1",
+    "@docusaurus/faster": "^3.8.1",
+    "@docusaurus/preset-classic": "^3.8.1",
+    "@docusaurus/theme-mermaid": "^3.8.1",
+    "@mdx-js/react": "^3.1.1",
+    "@reactflow/background": "^11.3.14",
+    "@reactflow/controls": "^11.2.14",
+    "clsx": "^2.1.1",
+    "docusaurus-plugin-sass": "^0.2.6",
+    "prism-react-renderer": "^2.4.1",
+    "random-int": "^3.1.0",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "reactflow": "^11.11.4",
+    "rehype-katex": "^7.0.1",
     "remark-math": "^6.0.0"
   },
   "devDependencies": {
-    "@docusaurus/module-type-aliases": "^3.7.0",
-    "prettier": "^3.4.2",
-    "sass": "^1.69.5",
-    "sass-loader": "^13.3.2"
+    "@docusaurus/module-type-aliases": "^3.8.1",
+    "prettier": "^3.6.2",
+    "sass": "^1.93.0",
+    "sass-loader": "^16.0.5"
   },
   "browserslist": {
     "production": [
