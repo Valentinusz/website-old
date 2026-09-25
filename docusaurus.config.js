@@ -17,7 +17,7 @@ export default {
     title: 'Boda Bálint',
     favicon: 'img/favicon.svg',
 
-    url: 'https://valentinusz.github.io',
+    url: 'https://valentinusz.github.io/website-old',
     baseUrl: '/',
     trailingSlash: false,
     deploymentBranch: 'gh-pages',
