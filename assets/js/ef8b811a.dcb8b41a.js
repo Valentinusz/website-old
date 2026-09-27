@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkvalentinusz_github_io=self.webpackChunkvalentinusz_github_io||[]).push([[8947],{6600:t=>{t.exports=JSON.parse('{"authors":[{"name":"Boda B\xe1lint","url":"https://github.com/Valentinusz","imageURL":"https://github.com/Valentinusz.png","key":"boda","page":null,"count":0}]}')}}]);

@@ -4,8 +4,8 @@
   <ShortName>Boda Bálint</ShortName>
   <Description>Search Boda Bálint</Description>
   <InputEncoding>UTF-8</InputEncoding>
-  <Image width="16" height="16" type="image/x-icon">https://valentinusz.github.io/img/favicon.svg</Image>
-  <Url type="text/html" method="get" template="https://valentinusz.github.io/search?q={searchTerms}"/>
-  <Url type="application/opensearchdescription+xml" rel="self" template="https://valentinusz.github.io/opensearch.xml" />
-  <moz:SearchForm>https://valentinusz.github.io/</moz:SearchForm>
+  <Image width="16" height="16" type="image/x-icon">https://valentinusz.github.io/website-old/img/favicon.svg</Image>
+  <Url type="text/html" method="get" template="https://valentinusz.github.io/website-old/search?q={searchTerms}"/>
+  <Url type="application/opensearchdescription+xml" rel="self" template="https://valentinusz.github.io/website-old/opensearch.xml" />
+  <moz:SearchForm>https://valentinusz.github.io/website-old/</moz:SearchForm>
 </OpenSearchDescription>
